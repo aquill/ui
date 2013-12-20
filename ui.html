@@ -1,0 +1,173 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Basic UI components for Aquill.</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/global.css">
+    <script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/selecter.js"></script>
+    <script type="text/javascript" src="assets/js/datetimepicker.js"></script>
+
+    <style type="text/css">
+        .wrap {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+    <h1 class="main-title" style="line-height: 60px; padding-top: 30px; margin-bottom: 30px; border-bottom: 1px solid">
+        Basic UI components for Aquill.</h1>
+
+    <form action="?" method="get">
+        <fieldset>
+            <div class="control-group width-80">
+                <label class="control-label">Radios</label>
+
+                <div class="controls">
+                    <label><input type="radio" name="radioss" value="1">item1</label>
+                    <label><input type="radio" name="radioss" value="2" checked>item2</label>
+                    <label><input type="radio" name="radioss" value="3">item3</label>
+                    <label><input type="radio" name="cb3" value="3" checked disabled>item3</label>
+                    <label><input type="radio" name="cb3" value="3" disabled>item3</label>
+                </div>
+            </div>
+            <div class="control-group width-70">
+                <label class="control-label">Checkboxes</label>
+
+                <div class="controls">
+                    <label><input type="checkbox" name="cb3" value="1">item1</label>
+                    <label><input type="checkbox" name="cb3" value="2" checked>item2</label>
+                    <label><input type="checkbox" name="cb3" value="3" checked disabled>item3</label>
+                    <label><input type="checkbox" name="cb3" value="3" disabled>item3</label>
+                </div>
+            </div>
+            <div class="control-group width-60">
+                <label class="control-label">Text input</label>
+
+                <div class="controls">
+                    <input type="text" name="text" id="text">
+                </div>
+            </div>
+            <div class="control-group width-60">
+                <label class="control-label">Disabled input</label>
+
+                <div class="controls">
+                    <input type="text" value="disabled" disabled="" class="disabled">
+                </div>
+            </div>
+            <!--<div class="control-group">
+                <label class="control-label">Readonly</label>
+
+                <div class="controls">
+                    <input type="text" value="disabled" readonly class="disabled">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">File</label>
+
+                <div class="controls">
+                    <input type="file">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Range input</label>
+
+                <div class="controls">
+                    <input min="1" max="15" type="range" name="range" value="6">
+                </div>
+            </div>-->
+            <div class="control-group width-50">
+                <label class="control-label">Datetime</label>
+
+                <div class="controls">
+                    <input type="text" name="date" placeholder="Month/Day/Year" class="datetime">
+                </div>
+            </div>
+            <div class="control-group width-50">
+                <label class="control-label">Disabled select</label>
+
+                <div class="controls">
+                    <select id="select" disabled name="select">
+                        <option>list item1</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group width-70">
+                <label class="control-label">multiple select</label>
+
+                <div class="controls">
+                    <select name="selecter_multiple" class="selecter_multiple" multiple="multiple">
+                        <optgroup label="Swedish Cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </optgroup>
+
+                        <optgroup label="German Cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group width-70">
+                <label class="control-label">Select</label>
+
+                <div class="controls">
+                    <select id="select" name="select">
+                        <option>list item1</option>
+                        <option disabled>list item2</option>
+                        <option>list item3</option>
+                        <option>list item4</option>
+                        <option>list item5</option>
+                        <option>list item1</option>
+                        <option>list item2</option>
+                        <option>list item3</option>
+                        <option>list item4</option>
+                        <option>list item5</option>
+                        <option>list item1</option>
+                        <option>list item2</option>
+                        <option>list item3</option>
+                        <option>list item4</option>
+                        <option>list item5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group width-90">
+                <label class="control-label">textarea</label>
+
+                <div class="controls">
+                    <textarea name="textarea" id="textarea" rows="10" cols="50"></textarea>
+                </div>
+            </div>
+            <div class="control-group width-60">
+                <label class="control-label">Checkbox</label>
+
+                <div class="controls">
+                    <label><input type="checkbox" name="cb3" value="1">item1</label>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn blue">Blue Button</button>
+                <button type="submit" class="btn green">Green Button</button>
+                <button type="submit" class="btn red">Red Button</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<script type="text/javascript" src="assets/js/form.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("select").selecter();
+        $('.datetime').appendDtpicker();
+    });
+</script>
+</body>
+</html>

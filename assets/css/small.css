@@ -1,0 +1,10 @@
+.container {
+    display: none;
+}
+.sidebar {
+    position: relative;
+    width: auto;
+}
+.list {
+    position: relative;
+}
